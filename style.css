@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #090979;
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 40%, rgba(112, 145, 179, 1) 59%, rgba(0, 255, 195, 1) 96%);
+    min-height: 100px ;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 500px;
+    background: linear-gradient(to right, #9932CC, #FF69B4);
+    background-clip: text;
+    color: transparent;
+}
+nav ul{
+    display: flex;
+    gap: 25px ;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    box-sizing: 1200px;
+    margin: 0 auto;
+    padding: 25px 0; 
+    
+}
+.button{
+    background-color: rgb(93, 93, 148);
+    color: rgb(232, 165, 165);
+    padding: 10px 20px ;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+main{
+    display:flex;
+    width: 100%;
+    height:  fit-content;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content > h1{
+    font-size: 30px;
+    font-weight: 100;
+}
+.content > h1 > span{
+   background: -o-linear-gradient(#9932CC);
+   background-clip: text;
+   color: transparent;
+}
+
+
+.box-img{
+    width: 50%;
+    background-color: rgb(112, 148, 136);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-img > img{
+    width: 100;
+    object-fit: contain;
+    
+}
+.btn-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.btn-wrapper > .btn--read {
+color: #9932CC;
+padding: 12px 25px;
+background-color: transparent;
+border: 25px;
+outline: none;
+border: 1px #FF69B4 solid;
+position: relative;
+}
+.btn-wrapper > .btn--start:hover {
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in ;
+}
+.btn-wrapper >.btn--read::before{
+ content: "";
+ position: absolute;
+}
+.btn-wrapper>.btn--read:hover::before{
+    width: 100%;
+}
